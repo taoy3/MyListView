@@ -1,4 +1,4 @@
-package se.emilsjolander.stickylistheaders;
+package com.view.taoy3.mylistview.view.stickylistheaders;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class ExpandableStickyListHeadersListView extends StickyListHeadersListView {
     public interface IAnimationExecutor{
-        public void executeAnim(View target,int animType);
+        public void executeAnim(View target, int animType);
     }
 
     public final static int ANIMATION_COLLAPSE = 1;

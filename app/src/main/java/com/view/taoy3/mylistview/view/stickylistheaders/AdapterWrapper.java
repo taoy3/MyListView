@@ -1,7 +1,4 @@
-package se.emilsjolander.stickylistheaders;
-
-import java.util.LinkedList;
-import java.util.List;
+package com.view.taoy3.mylistview.view.stickylistheaders;
 
 import android.content.Context;
 import android.database.DataSetObserver;
@@ -13,12 +10,15 @@ import android.widget.BaseAdapter;
 import android.widget.Checkable;
 import android.widget.ListAdapter;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * A {@link ListAdapter} which wraps a {@link StickyListHeadersAdapter} and
  * automatically handles wrapping the result of
- * {@link StickyListHeadersAdapter#getView(int, android.view.View, android.view.ViewGroup)}
+ * {@link StickyListHeadersAdapter#getView(int, View, ViewGroup)}
  * and
- * {@link StickyListHeadersAdapter#getHeaderView(int, android.view.View, android.view.ViewGroup)}
+ * {@link StickyListHeadersAdapter#getHeaderView(int, View, ViewGroup)}
  * appropriately.
  *
  * @author Jake Wharton (jakewharton@gmail.com)

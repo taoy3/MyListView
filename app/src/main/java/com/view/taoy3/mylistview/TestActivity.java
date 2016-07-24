@@ -1,4 +1,4 @@
-package se.emilsjolander.stickylistheaders.sample;
+package com.view.taoy3.mylistview;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
-import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
+import com.view.taoy3.mylistview.view.stickylistheaders.StickyListHeadersListView;
 
 /**
  * @author Emil Sjölander

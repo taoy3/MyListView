@@ -1,16 +1,17 @@
-package se.emilsjolander.stickylistheaders.sample;
-import com.nineoldandroids.animation.ValueAnimator;
+package com.view.taoy3.mylistview;
+
+import android.animation.Animator;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nineoldandroids.animation.Animator;
+import com.view.taoy3.mylistview.view.stickylistheaders.ExpandableStickyListHeadersListView;
+import com.view.taoy3.mylistview.view.stickylistheaders.StickyListHeadersListView;
 
 import java.util.WeakHashMap;
 
-import se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView;
-import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
 
 /**
  * @author lsjwzh

@@ -1,4 +1,4 @@
-package se.emilsjolander.stickylistheaders.sample;
+package com.view.taoy3.mylistview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,9 +8,10 @@ import android.widget.BaseAdapter;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
+import com.view.taoy3.mylistview.view.stickylistheaders.StickyListHeadersAdapter;
+
 import java.util.ArrayList;
 
-import se.emilsjolander.stickylistheaders.StickyListHeadersAdapter;
 
 public class TestBaseAdapter extends BaseAdapter implements
         StickyListHeadersAdapter, SectionIndexer {

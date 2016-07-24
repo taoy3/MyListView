@@ -1,4 +1,4 @@
-package se.emilsjolander.stickylistheaders;
+package com.view.taoy3.mylistview.view.stickylistheaders;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -85,7 +85,7 @@ public class WrapperView extends ViewGroup {
 		
 		//measure header or divider. when there is a header visible it acts as the divider
 		if (mHeader != null) {
-			ViewGroup.LayoutParams params = mHeader.getLayoutParams();
+			LayoutParams params = mHeader.getLayoutParams();
 			if (params != null && params.height > 0) {
 				mHeader.measure(childWidthMeasureSpec,
 						MeasureSpec.makeMeasureSpec(params.height, MeasureSpec.EXACTLY));
@@ -99,7 +99,7 @@ public class WrapperView extends ViewGroup {
 		}
 		
 		//measure item
-		ViewGroup.LayoutParams params = mItem.getLayoutParams();
+		LayoutParams params = mItem.getLayoutParams();
         //enable hiding listview item,ex. toggle off items in group
 		if(mItem.getVisibility()==View.GONE){
             mItem.measure(childWidthMeasureSpec,

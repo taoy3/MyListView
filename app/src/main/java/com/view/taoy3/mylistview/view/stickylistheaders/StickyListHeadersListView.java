@@ -1,4 +1,4 @@
-package se.emilsjolander.stickylistheaders;
+package com.view.taoy3.mylistview.view.stickylistheaders;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -25,7 +25,8 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
 
-import se.emilsjolander.stickylistheaders.WrapperViewList.LifeCycleListener;
+import com.view.taoy3.mylistview.R;
+
 
 /**
  * Even though this is a FrameLayout subclass we still consider it a ListView.
@@ -39,7 +40,7 @@ public class StickyListHeadersListView extends FrameLayout {
 
     public interface OnHeaderClickListener {
         void onHeaderClick(StickyListHeadersListView l, View header,
-                                  int itemPosition, long headerId, boolean currentlySticky);
+                           int itemPosition, long headerId, boolean currentlySticky);
     }
 
     /**
@@ -70,7 +71,7 @@ public class StickyListHeadersListView extends FrameLayout {
          * @param headerId      The id of the new sticky header.
          */
         void onStickyHeaderChanged(StickyListHeadersListView l, View header,
-                                          int itemPosition, long headerId);
+                                   int itemPosition, long headerId);
 
     }
 
@@ -135,7 +136,7 @@ public class StickyListHeadersListView extends FrameLayout {
         mList.setDividerHeight(0);
 
         if (attrs != null) {
-            TypedArray a = context.getTheme().obtainStyledAttributes(attrs,R.styleable.StickyListHeadersListView, defStyle, 0);
+            TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.StickyListHeadersListView, defStyle, 0);
 
             try {
                 // -- View attributes --
@@ -522,7 +523,7 @@ public class StickyListHeadersListView extends FrameLayout {
 
     }
 
-    private class WrapperViewListLifeCycleListener implements LifeCycleListener {
+    private class WrapperViewListLifeCycleListener implements WrapperViewList.LifeCycleListener {
 
         @Override
         public void onDispatchDrawOccurred(Canvas canvas) {
@@ -1062,7 +1063,7 @@ public class StickyListHeadersListView extends FrameLayout {
 
     /**
      * @return true if the fast scroller will always show. False on pre-Honeycomb devices.
-     * @see android.widget.AbsListView#isFastScrollAlwaysVisible()
+     * @see AbsListView#isFastScrollAlwaysVisible()
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public boolean isFastScrollAlwaysVisible() {
